@@ -1,0 +1,18 @@
+#N canvas 733 111 480 334 10;
+#X obj 98 35 inlet list;
+#X obj 145 234 outlet item;
+#X obj 139 147 list split;
+#X obj 187 34 inlet n;
+#X obj 251 88 f \$1;
+#X obj 250 62 loadbang;
+#X text 60 7 return nth item of list \, takes inlet or creation arg
+;
+#X obj 145 186 list split 1;
+#X obj 211 128 + 0;
+#X connect 0 0 2 0;
+#X connect 2 1 7 0;
+#X connect 3 0 8 0;
+#X connect 4 0 8 0;
+#X connect 5 0 4 0;
+#X connect 7 0 1 0;
+#X connect 8 0 2 1;

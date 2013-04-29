@@ -1,0 +1,18 @@
+#N canvas 0 0 450 300 10;
+#X obj 108 45 inlet list;
+#X obj 156 178 list split;
+#X obj 197 44 inlet n;
+#X obj 254 105 f \$1;
+#X obj 260 72 loadbang;
+#X text 70 17 return first n items of list \, takes inlet or creation
+arg;
+#X obj 155 235 outlet items;
+#X text 245 233 returns short list if lengt < n;
+#X obj 221 139 + 0;
+#X connect 0 0 1 0;
+#X connect 1 0 6 0;
+#X connect 1 2 6 0;
+#X connect 2 0 8 0;
+#X connect 3 0 8 0;
+#X connect 4 0 3 0;
+#X connect 8 0 1 1;
