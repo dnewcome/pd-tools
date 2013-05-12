@@ -1,0 +1,14 @@
+#N canvas 19 22 468 382 10;
+#X obj 214 25 inlet;
+#X obj 207 240 outlet;
+#X obj 277 133 del-float \$1;
+#X obj 276 109 f \$2;
+#X text 36 -33 return to zero or given value after pulsing a float
+;
+#X text 37 -11 usage: [blip time value];
+#X obj 210 73 t b f;
+#X connect 0 0 6 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 6 0 3 0;
+#X connect 6 1 1 0;
