@@ -1,0 +1,12 @@
+#N canvas 806 442 450 300 10;
+#X obj 181 21 inlet;
+#X obj 184 231 outlet;
+#X obj 211 116 f;
+#X obj 169 76 t b f;
+#X obj 162 123 del \$1;
+#X text 245 19 delay an incoming float;
+#X connect 0 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 3 1 2 1;
+#X connect 4 0 2 0;
